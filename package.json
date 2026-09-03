@@ -1,0 +1,41 @@
+{
+  "name": "al-ahd-experience",
+  "version": "1.0.0",
+  "description": "Al Ahd General Contracting - Cinematic Industrial Digital Experience",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "next": "^14.2.3",
+    "typescript": "^5.4.5",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/node": "^20.12.12",
+    "tailwindcss": "^3.4.3",
+    "postcss": "^8.4.38",
+    "autoprefixer": "^10.4.19",
+    "gsap": "^3.12.2",
+    "framer-motion": "^10.16.16",
+    "lenis": "^1.1.9",
+    "three": "^r128",
+    "@react-three/fiber": "^8.15.19",
+    "@react-three/drei": "^9.107.0",
+    "react-hook-form": "^7.51.4",
+    "zod": "^3.23.8",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/gsap": "^3.12.10",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.3",
+    "prettier": "^3.2.5"
+  }
+}
