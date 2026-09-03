@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom component utilities */
+@layer components {
+  /* Buttons */
+  .btn {
+    @apply relative inline-flex items-center justify-center gap-2 px-6 py-3 rounded-sm font-medium transition-all duration-300 ease-out;
+  }
+  
+  .btn-primary {
+    @apply bg-gold text-obsidian hover:bg-amber shadow-lg hover:shadow-xl hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply border border-gold text-gold hover:bg-gold/10 hover:border-cyan hover:text-cyan;
+  }
+  
+  .btn-dark {
+    @apply bg-steel text-text-primary hover:bg-steel/80 border border-steel/50;
+  }
+  
+  /* Cards */
+  .card {
+    @apply bg-steel/30 backdrop-blur-sm border border-steel/50 rounded-lg p-6 transition-all duration-500;
+  }
+  
+  .card:hover {
+    @apply border-gold/30 bg-steel/50 shadow-lg;
+  }
+  
+  /* Sections */
+  .section {
+    @apply relative w-full py-20 md:py-32 overflow-hidden;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6;
+  }
+  
+  /* Grid */
+  .grid-auto {
+    @apply grid gap-6 md:gap-8;
+  }
+  
+  /* Backgrounds */
+  .bg-gradient-dark {
+    @apply bg-gradient-to-br from-navy-deep via-obsidian to-carbon;
+  }
+  
+  .bg-gradient-steel {
+    @apply bg-gradient-to-r from-steel to-steel/50;
+  }
+  
+  /* Text utilities */
+  .text-accent {
+    @apply text-gold;
+  }
+  
+  .text-tech {
+    @apply text-cyan font-mono;
+  }
+  
+  .text-bright {
+    @apply text-text-primary;
+  }
+  
+  .text-dim {
+    @apply text-text-muted;
+  }
+  
+  /* Borders */
+  .border-gold-glow {
+    @apply border-gold/20 hover:border-gold/50 transition-colors duration-300;
+  }
+  
+  .divider {
+    @apply h-px bg-gradient-to-r from-transparent via-steel to-transparent my-8;
+  }
+  
+  /* Position utilities */
+  .absolute-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+  
+  /* Animations */
+  .animate-fade-in {
+    @apply animate-in fade-in duration-700;
+  }
+  
+  .animate-slide-up {
+    @apply animate-in slide-in-from-bottom-4 duration-700;
+  }
+  
+  .animate-scale-in {
+    @apply animate-in zoom-in duration-500;
+  }
+}
