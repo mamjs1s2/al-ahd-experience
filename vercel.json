@@ -1,0 +1,17 @@
+# Vercel Deployment Configuration
+
+[env]
+  NODE_VERSION = "20.x"
+
+[functions]
+  "api/**" = { memory = 1024, maxDuration = 30 }
+
+[build]
+  # Build command
+  command = "npm run build"
+  # Output directory
+  output = ".next"
+
+[crons]
+  # Optional: Revalidate sitemap every 24 hours
+  "0 0 * * *" = "api/revalidate"

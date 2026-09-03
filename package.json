@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "Al Ahd General Contracting - Cinematic Industrial Digital Experience",
   "private": true,
+  "author": "Mahmoud",
+  "license": "PROPRIETARY",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "analyze": "ANALYZE=true next build",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css,json}\""
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -29,13 +34,22 @@
     "@react-three/drei": "^9.107.0",
     "react-hook-form": "^7.51.4",
     "zod": "^3.23.8",
+    "@hookform/resolvers": "^3.3.4",
     "clsx": "^2.1.1",
-    "tailwind-merge": "^2.3.0"
+    "tailwind-merge": "^2.3.0",
+    "split-type": "^0.3.5"
   },
   "devDependencies": {
     "@types/gsap": "^3.12.10",
+    "@next/bundle-analyzer": "^14.2.3",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.3",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
   }
 }
